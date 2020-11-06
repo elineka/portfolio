@@ -17,7 +17,7 @@ const Works = () => {
             </p>
           </li>
           {projects.map(({ id, name, imgSrc, url, about }) => (
-            <Card name={name} id={id} imgSrc={imgSrc} url={url} about={about} />
+            <Card name={name} id={id} imgSrc={imgSrc} url={url} about={about} key={id}/>
           ))}
         </ul>
       </div>

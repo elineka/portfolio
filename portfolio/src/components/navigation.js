@@ -11,17 +11,17 @@ const Navigation = () => {
                     </div>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="http://github.com">
                                 <AiOutlineGithub className="icon" />
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="http://twitter.com">
                                 <AiOutlineTwitter className="icon" />
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="http://linkedin.com/in/">
                                <FaLinkedinIn className="icon" />
                             </a>
                         </li>
