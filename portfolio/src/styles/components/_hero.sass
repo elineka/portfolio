@@ -1,0 +1,87 @@
+.hero
+    background: linear-gradient(275.84deg, rgba(27, 28, 29, 0.55) 19.08%, rgba(2,2,2, .07) 98.38%), url('../images/image1.jpg')
+    background-repeat: no-repeat
+    background-position: bottom right
+    height: 100%
+    background-size: cover
+    position: relative
+    @include flexBox(center, center)
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        display: flex
+        color: white
+        background: $dark
+        height: 100%
+        width: 100%
+        z-index: 1
+        clip-path: polygon(0 0,50px 0, 100% 100%,0 100%)
+    .container
+        min-height: calc(100vh - 100px)
+        padding: 60px 0
+        z-index: 2
+        @include flexBox(space-between, flex-start)
+        flex-wrap: wrap
+        .desc
+            width: 50%
+            order: 2
+            margin-top: 50px
+            padding-left: 30px
+            color: white
+            h1
+                font-size: clamp(24px, 4vw, 46px)
+            p    
+                font-size: 18px
+                margin: 20px 0
+                color: #C3C3C3
+                line-height: 28px
+        .svg
+            order: 1
+            width: 50%
+            min-width: 300px
+            svg
+                width: 100%
+        .icon
+            position: absolute
+            bottom: 20px
+            left: 50%
+            transform: translateX(-50%)
+            font-size: 40px
+            margin-left: -20px
+            color: white
+            animation: hash .6s ease-in 0s infinite both
+
+
+@keyframes hash
+    0%
+        transform: translateY(0)
+    50%
+        transform: translateY(10px)
+    100%
+        transform: translateY(0)
+
+@media screen and (min-height: 900px)
+    .hero
+        .container
+            align-items: center
+            .desc
+                margin-top: 0
+            // .svg
+            //     margin-top: -40px
+
+@media screen and (max-width: 992px)
+    .hero
+        .container
+            width: 90%
+
+@media screen and (max-width: 670px)
+    .hero
+        .container
+            .desc
+                width: 100%
+                padding: 30px 0
+                margin-top: 0
+            .svg
+                width: 100%

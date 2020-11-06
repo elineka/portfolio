@@ -1,0 +1,69 @@
+.contact
+    background: #25292E
+    .container
+        padding: 50px 0
+        @include flexBox(center, flex-start)
+        flex-wrap: wrap
+        .contact-details
+            width: 50%
+            max-width: 500px
+            padding-right: 40px
+            h2
+                color: white
+                font-size: clamp(28px, 3vw, 48px)
+                margin-bottom: 50px
+            a
+                color: #ffffffea
+                text-decoration: underline
+        .contact-form
+            width: 50%
+            max-width: 500px
+            form
+                width: 80%
+                label
+                    color: white
+                    margin-bottom: 7px
+                .form-group, .form-control
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    margin: 20px 0
+                    // height: 35px
+                    position: relative        
+                    label
+                        // position: absolute
+                        // top: 50%
+                        // left: 10px
+                        // transform: translateY(-50%)
+                input, textarea
+                    border: none
+                    width: 100%
+                    height: 35px
+                    background: #97A4A5
+                    padding: 10px
+                .form-control
+                    // height: 100px
+                    position: relative
+                    margin: 20px 0
+                    label
+                        // position: absolute
+                        // left: 10px
+                        // top: 10px
+                textarea
+                    height: 100px
+                    resize: none
+
+
+@media screen and ( max-width: 768px )
+    .contact
+        background: #25292E
+        .container
+            .contact-details
+                width: 100%
+                padding: 30px 0
+                h2
+                    margin-bottom: 30px
+            .contact-form
+                width: 100%
+                form
+                    width: 100%

@@ -1,0 +1,159 @@
+.about
+    padding: 30px 0
+    .abtdetail
+        height: 100%
+        .container
+            width: 80%
+            h1
+                color: white
+                font-size: clamp(24px, 4vw, 46px)
+                margin-bottom: 30px
+                position: relative
+                padding: 15px 10px 20px
+                text-align: center
+                span
+                    position: absolute
+                    left: 50%
+                    bottom: 0
+                    transform: translateX(-50%)
+                    height: 15px
+                    width: 15px
+                    border-radius: 50%
+                    border: 2px solid white
+                &::before, &::after
+                    content: ""
+                    height: 2px
+                    width: 30px
+                    background: white
+                    position: absolute
+                    bottom: 7.5px
+                &::before
+                    left: calc( 50% - 45px )
+                &::after
+                    right: calc( 50% - 45px )
+            .showcase
+                @include flexBox(center, flex-start)
+                margin-bottom: 50px
+                .abtdetail
+                    width: calc( 100% - 310px )
+                    background: #14A7AF
+                    @include flexBox(center, center)
+                    padding: 50px
+                    margin-right: 10px
+                    min-height: 270px
+                    p
+                        font-size: 18px
+                        text-align: center
+                        line-height: 30px
+                .abtpic
+                    width: 40%
+                    min-width: 300px
+                    // background: red
+                    height: calc( 100% - 4px )
+    
+.tools
+    margin-bottom: 15px
+    color: white
+    h2
+        @include flexBox(center, center)
+        margin: 20px
+    ul
+        @include flexBox(center, center)
+        flex-wrap: wrap
+        li
+            margin: 10px 15px
+        
+.skills
+    color: white
+    padding: 40px
+    ul
+        @include flexBox(center, flex-start)
+        flex-wrap: wrap
+        li
+            // max-width: 50%
+            width: 300px
+            min-width: 300px
+            text-align: center
+            position: relative
+            @include flexBox(center, center)
+            flex-direction: column
+            padding: 20px
+            transition: .45s ease-in-out
+            margin: 20px 0
+            span
+                color: #14A7AF
+                font-size: 35px
+                margin-bottom: 15px 
+                height: 50px
+                width: 50px
+                @include flexBox(center, center) 
+                border-radius: 50%
+                transition: .45s ease-in-out
+            h3
+                margin-bottom: 20px
+            p
+                line-height: 30px
+                font-size: 18px
+                color: #AFB0AC
+            .skillabt
+                // padding: 30px
+            &::before, &::after
+                content: ""
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                transition: .45s ease-in-out
+            &::before
+                top: -8px
+                width: 0
+                height: 15px
+                background: $dark
+                // border: 1px solid gray
+                border-radius: 8px
+            &::after
+                height: 2px
+                top: -1px
+                width: 0
+                background: $primary-color
+            &:hover
+                padding: 40px 20px
+                box-shadow: 12px 12px 24px #0c0d0e, -12px -12px 24px #2e3536
+                &::before
+                    width: 100px
+                    border: 1px solid gray
+                &::after
+                    width: 70px
+                span
+                    border: 1px solid $primary-color
+                    font-size: 25px
+
+@media screen and ( max-width: 992px )
+    .about
+        .abtdetail
+            .container
+                width: 90%
+                .showcase
+                    .abtdetail
+                        padding: 25px
+                    .abtpic
+
+@media screen and ( max-width: 690px )
+    .about
+        .abtdetail
+            .container
+                width: 100%
+                .showcase
+                    background: $primary-color
+                    flex-wrap: wrap
+                    .abtdetail
+                        width: 100%
+                        margin: 0
+                        min-height: 100%
+                        padding: 40px 20px
+                        order: 2
+                    .abtpic
+                        order: 1
+                        width: 100%
+                        img
+                            width: 100%
+                            height: auto

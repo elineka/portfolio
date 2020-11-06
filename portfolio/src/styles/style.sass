@@ -1,0 +1,45 @@
+@import "./_variables"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    scroll-behavior: smooth
+
+body
+    background: $dark
+    overflow-x: hidden
+
+li
+    list-style: none
+
+a
+    text-decoration: none
+
+img
+    width: 100%
+
+button
+    border: none
+
+input:focus, textarea:focus, button:focus
+    outline: none !important
+
+.btn-primary
+    color: black
+    @include flexBox(center, center)
+    background-color: $primary-color
+    height: 30px
+    width: 140px
+
+
+.container
+    margin: 0 auto
+    width: 80%
+
+@import "./components/_navigation"
+@import "./components/_hero"
+@import "./components/_works"
+@import "./components/_about"
+@import "./components/_contact"
+@import "./components/_footer"

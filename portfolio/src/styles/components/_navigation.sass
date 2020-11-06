@@ -1,0 +1,35 @@
+header
+    .top-nav
+        height: 50px
+        @include background(#0F0F10)
+        // background: $dark
+        .container
+            @include flexBox(space-between, center)
+            .logo
+                img
+                    height: 50px
+                    width: auto
+            ul
+                @include flexBox(flex-end, center)
+                li
+                    margin-left: 20px
+                    a
+                        color: white
+    .bottom-nav
+        position: sticky
+        top: 0
+        height: 50px
+        @include background(#0F0F10)
+        background: $dark
+        @include flexBox(center, center)
+        nav
+            ul
+                @include flexBox(center, center)
+                li
+                    margin: 0 10px
+                    a
+                        color: white
+                        text-decoration: none
+                        font-size: clamp(16px, 2vw, 20px)
+                        &:hover
+                            color: $primary-color
