@@ -9,11 +9,9 @@ const Works = () => {
       <div className="showcase">
         <ul>
           <li className="showC">
-            <h2>Work showcase</h2>
+            <h2>Projects</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-              ultrices eget turpis scelerisque eu libero euismod fringilla
-              integer. Viverra sit vestibulum morbi mattis malesuad
+            I've been constantly working on over the years
             </p>
           </li>
           {projects.map(({ id, name, imgSrc, url, about }) => (

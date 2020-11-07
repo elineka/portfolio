@@ -1,5 +1,5 @@
 import Svg from "./svg";
-import { FaAngleDoubleDown } from "react-icons/all"
+import { FaAngleDoubleDown } from "react-icons/all";
 
 const Hero = () => {
   return (
@@ -8,17 +8,19 @@ const Hero = () => {
         <div className="desc">
           <h1>Hello,meet Elineka Maleo</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultrices
-            eget turpis scelerisque eu libero euismod fringilla integer. Viverra
-            sit vestibulum morbi mattis malesuada.{" "}
+            Web developer, UX/UI designer. I design and build user interface.
+            Currently living in Dar es salaam, Tanzania.<br/>
+            "Let's make something special".
           </p>
-          <a href="#works" className="btn-primary">See the works</a>
+          <a href="#works" className="btn-primary">
+            See the works
+          </a>
         </div>
         <div className="svg">
-          <Svg/>
+          <Svg />
         </div>
         <a className="icon" href="#works">
-        <FaAngleDoubleDown />
+          <FaAngleDoubleDown />
         </a>
       </div>
     </div>

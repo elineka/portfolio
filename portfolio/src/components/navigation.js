@@ -11,7 +11,7 @@ const Navigation = () => {
                     </div>
                     <ul>
                         <li>
-                            <a href="http://github.com">
+                            <a href="http://github.com/elineka">
                                 <AiOutlineGithub className="icon" />
                             </a>
                         </li>

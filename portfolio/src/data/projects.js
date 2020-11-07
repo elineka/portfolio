@@ -4,35 +4,35 @@ import projectTwo from "../images/flower.jpg"
 const projects = [
     {
         id: "01",
-        name: "Project One",
+        name: "Weather app",
         imgSrc: projectOne,
-        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultrices eget turpis scelerisque eu libero euismod fringilla integer. Viverra sit vestibulum morbi mattis malesuada.",
-        url: "#"
+        about: "This is the weather application where you enter the name of city or country to see its weather details",
+        url: "https://weatherdetail.netlify.app/"
     },
     {
         id: "02",
-        name: "Project One",
+        name: "Project Two",
         imgSrc: projectTwo,
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultrices eget turpis scelerisque eu libero euismod fringilla integer. Viverra sit vestibulum morbi mattis malesuada.",
         url: "#"
     },
     {
         id: "03",
-        name: "Project One",
+        name: "Project Three",
         imgSrc: projectOne,
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultrices eget turpis scelerisque eu libero euismod fringilla integer. Viverra sit vestibulum morbi mattis malesuada.",
         url: "#"
     },
     {
         id: "04",
-        name: "Project One",
+        name: "Project Four",
         imgSrc: projectTwo,
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultrices eget turpis scelerisque eu libero euismod fringilla integer. Viverra sit vestibulum morbi mattis malesuada.",
         url: "#"
     },
     {
         id: "05",
-        name: "Project One",
+        name: "Project Five",
         imgSrc: projectOne,
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultrices eget turpis scelerisque eu libero euismod fringilla integer. Viverra sit vestibulum morbi mattis malesuada.",
         url: "#"

@@ -4,7 +4,7 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    alert("Sent")
+    alert(" Message recieved thank you ")
   }
   return (
     <div className="contact" id="contact">
