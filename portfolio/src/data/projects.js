@@ -1,5 +1,6 @@
 import projectOne from "../images/111.jpg"
 import projectTwo from "../images/flower.jpg"
+import projectThree from "../images/work.jpg"
 
 const projects = [
     {
@@ -19,7 +20,7 @@ const projects = [
     {
         id: "03",
         name: "Project Three",
-        imgSrc: projectOne,
+        imgSrc: projectThree,
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultrices eget turpis scelerisque eu libero euismod fringilla integer. Viverra sit vestibulum morbi mattis malesuada.",
         url: "#"
     },
@@ -33,7 +34,7 @@ const projects = [
     {
         id: "05",
         name: "Project Five",
-        imgSrc: projectOne,
+        imgSrc: projectThree,
         about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At ultrices eget turpis scelerisque eu libero euismod fringilla integer. Viverra sit vestibulum morbi mattis malesuada.",
         url: "#"
     }

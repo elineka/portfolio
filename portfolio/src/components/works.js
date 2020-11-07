@@ -11,7 +11,7 @@ const Works = () => {
           <li className="showC">
             <h2>Projects</h2>
             <p>
-            I've been constantly working on over the years
+            I have been constantly working on over the time
             </p>
           </li>
           {projects.map(({ id, name, imgSrc, url, about }) => (
