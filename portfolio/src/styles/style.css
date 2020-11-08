@@ -752,6 +752,26 @@ header .bottom-nav nav ul li a:hover {
   background: #25292E;
 }
 
+.contact .alert {
+  font-size: .9rem;
+  margin: 0 0 1rem 0;
+  border-radius: 8px;
+}
+
+.contact .alert.success {
+  padding: .7rem;
+  background: #D4EDDA;
+  color: #15575C;
+  border: 1px solid #C3E6CB;
+}
+
+.contact .alert.error {
+  padding: .7rem;
+  background: #F8D7DA;
+  color: #721c29;
+  border: 1px solid #F5C6CB;
+}
+
 .contact .container {
   padding: 50px 0;
   display: -webkit-box;
